@@ -38,7 +38,8 @@ public class loginToShopee {
 		WebUI.delay(2)
 		WebUI.setText(Username, 'khasogi27@gmail.com')
 		WebUI.delay(2)
-		WebUI.setText(Password, 'myloveallah')
+		WebUI.setText(Password, 'passwordtest123
+')
 		WebUI.delay(2)
 		WebUI.click(submit)
 		WebUI.delay(2)
