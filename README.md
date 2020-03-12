@@ -1,2 +1,2 @@
 # QA-Tester
-Web Testing
+Web Testing (samples)
