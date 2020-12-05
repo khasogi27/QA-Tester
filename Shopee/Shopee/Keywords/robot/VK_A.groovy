@@ -1,4 +1,4 @@
-package shopeeweb
+package robot
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -19,28 +19,14 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
+import java.awt.Robot as Robot
+import java.awt.event.KeyEvent as KeyEvent
 
-public class loginToShopee {
-	def static void login(){
-		def popup = findTestObject('login/popup-shopee')
-		def Login = findTestObject('Login/login-btn')
-		def Username = findTestObject('Login/Username-input')
-		def Password = findTestObject('Login/Password-input')
-		def submit = findTestObject('Login/login-btn2')
-
-		WebUI.openBrowser('')
-		WebUI.maximizeWindow()
-		WebUI.navigateToUrl('shopee.co.id')
-		WebUI.delay(2)
-		WebUI.click(popup)
-		WebUI.delay(2)
-		WebUI.click(Login)
-		WebUI.delay(2)
-		WebUI.setText(Username, 'khasogi27@gmail.com')
-		WebUI.delay(2)
-		WebUI.setText(Password, 'passwordtest123')
-		WebUI.delay(2)
-		WebUI.click(submit)
-		WebUI.delay(2)
+public class VK_A {
+	def static void A(){
+		Robot x = new Robot()
+		x.keyPress(KeyEvent.VK_A)
+		x.keyRelease(KeyEvent.VK_A)
+		WebUI.delay(1)
 	}
 }

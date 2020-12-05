@@ -20,27 +20,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
 
-public class loginToShopee {
+public class loginToGmail {
 	def static void login(){
-		def popup = findTestObject('login/popup-shopee')
-		def Login = findTestObject('Login/login-btn')
-		def Username = findTestObject('Login/Username-input')
-		def Password = findTestObject('Login/Password-input')
-		def submit = findTestObject('Login/login-btn2')
+		def verify = findTestObject('Login/verify-login')
 
-		WebUI.openBrowser('')
-		WebUI.maximizeWindow()
-		WebUI.navigateToUrl('shopee.co.id')
+		WebUI.click(verify)
 		WebUI.delay(2)
-		WebUI.click(popup)
-		WebUI.delay(2)
-		WebUI.click(Login)
-		WebUI.delay(2)
-		WebUI.setText(Username, 'khasogi27@gmail.com')
-		WebUI.delay(2)
-		WebUI.setText(Password, 'passwordtest123')
-		WebUI.delay(2)
-		WebUI.click(submit)
+		WebUI.navigateToUrl('google.com')
 		WebUI.delay(2)
 	}
 }
